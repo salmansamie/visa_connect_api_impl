@@ -1,0 +1,431 @@
+<html>
+<head>
+<title>TestNG:  Command line test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Command line test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>12/5/0</td>
+</tr><tr>
+<td>Started on:</td><td>Sat Jun 02 23:48:18 BST 2018</td>
+</tr>
+<tr><td>Total time:</td><td>15 seconds (15198 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.visa.vdp.visacheckout.TestGetPaymentData.testGetPaymentInfo()'><b>testGetPaymentInfo</b><br>Test class: com.visa.vdp.visacheckout.TestGetPaymentData</td>
+<td><div><pre>java.lang.IllegalArgumentException: Illegal character in path at index 62: https://sandbox.api.visa.com/wallet-services-web/payment/data/{put your visa checkout callId here}?apikey=VCBDF5CL8GHLN275YXLX21KZXeaM3OyFf8_YEKJEvIne6ZVBo
+	at java.net.URI.create(URI.java:852)
+	at org.apache.http.client.methods.HttpGet.&lt;init&gt;(HttpGet.java:69)
+	at com.visa.vdp.utils.VisaAPIClient.createHttpRequest(VisaAPIClient.java:82)
+	at com.visa.vdp.utils.VisaAPIClient.doXPayTokenRequest(VisaAPIClient.java:135)
+	at com.visa.vdp.visacheckout.TestGetPaymentData.testGetPaymentInfo(TestGetPaymentData.java:34)
+Caused by: java.net.URISyntaxException: Illegal character in path at index 62: https://sandbox.api.visa.com/wallet-services-web/payment/data/{put your visa checkout callId here}?apikey=VCBDF5CL8GHLN275YXLX21KZXeaM3OyFf8_YEKJEvIne6ZVBo
+	at java.net.URI$Parser.fail(URI.java:2848)
+	at java.net.URI$Parser.checkChars(URI.java:3021)
+	at java.net.URI$Parser.parseHierarchical(URI.java:3105)
+	at java.net.URI$Parser.parse(URI.java:3053)
+	at java.net.URI.&lt;init&gt;(URI.java:588)
+	at java.net.URI.create(URI.java:850)
+	... 38 more
+... Removed 34 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2061543916", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2061543916'><pre>java.lang.IllegalArgumentException: Illegal character in path at index 62: https://sandbox.api.visa.com/wallet-services-web/payment/data/{put your visa checkout callId here}?apikey=VCBDF5CL8GHLN275YXLX21KZXeaM3OyFf8_YEKJEvIne6ZVBo
+	at java.net.URI.create(URI.java:852)
+	at org.apache.http.client.methods.HttpGet.&lt;init&gt;(HttpGet.java:69)
+	at com.visa.vdp.utils.VisaAPIClient.createHttpRequest(VisaAPIClient.java:82)
+	at com.visa.vdp.utils.VisaAPIClient.doXPayTokenRequest(VisaAPIClient.java:135)
+	at com.visa.vdp.visacheckout.TestGetPaymentData.testGetPaymentInfo(TestGetPaymentData.java:34)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:159)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+Caused by: java.net.URISyntaxException: Illegal character in path at index 62: https://sandbox.api.visa.com/wallet-services-web/payment/data/{put your visa checkout callId here}?apikey=VCBDF5CL8GHLN275YXLX21KZXeaM3OyFf8_YEKJEvIne6ZVBo
+	at java.net.URI$Parser.fail(URI.java:2848)
+	at java.net.URI$Parser.checkChars(URI.java:3021)
+	at java.net.URI$Parser.parseHierarchical(URI.java:3105)
+	at java.net.URI$Parser.parse(URI.java:3053)
+	at java.net.URI.&lt;init&gt;(URI.java:588)
+	at java.net.URI.create(URI.java:850)
+	... 38 more
+</pre></div></td>
+<td>0</td>
+<td>com.visa.vdp.visacheckout.TestGetPaymentData@17f6480</td></tr>
+<tr>
+<td title='com.visa.vdp.visadirect.TestFundsTransfer.testPushFundsTransactions()'><b>testPushFundsTransactions</b><br>Test class: com.visa.vdp.visadirect.TestFundsTransfer</td>
+<td><div><pre>java.lang.AssertionError: expected [200] but found [400]
+	at com.visa.vdp.visadirect.TestFundsTransfer.testPushFundsTransactions(TestFundsTransfer.java:68)
+... Removed 40 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace808228639", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace808228639'><pre>java.lang.AssertionError: expected [200] but found [400]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
+	at org.testng.Assert.assertEquals(Assert.java:116)
+	at org.testng.Assert.assertEquals(Assert.java:389)
+	at org.testng.Assert.assertEquals(Assert.java:399)
+	at com.visa.vdp.visadirect.TestFundsTransfer.testPushFundsTransactions(TestFundsTransfer.java:68)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:159)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+</pre></div></td>
+<td>0</td>
+<td>com.visa.vdp.visadirect.TestFundsTransfer@2acf57e3</td></tr>
+<tr>
+<td title='com.visa.vdp.vctc.TestConsumerRules.testRegisterACard()'><b>testRegisterACard</b><br>Test class: com.visa.vdp.vctc.TestConsumerRules</td>
+<td><div><pre>java.lang.AssertionError: expected [true] but found [false]
+	at com.visa.vdp.vctc.TestConsumerRules.testRegisterACard(TestConsumerRules.java:37)
+... Removed 38 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2095486832", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2095486832'><pre>java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at org.testng.Assert.assertTrue(Assert.java:52)
+	at com.visa.vdp.vctc.TestConsumerRules.testRegisterACard(TestConsumerRules.java:37)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:159)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+</pre></div></td>
+<td>0</td>
+<td>com.visa.vdp.vctc.TestConsumerRules@71be98f5</td></tr>
+<tr>
+<td title='com.visa.vdp.visacheckout.TestUpdatePaymentInformation.testUpdatePaymentInfo()'><b>testUpdatePaymentInfo</b><br>Test class: com.visa.vdp.visacheckout.TestUpdatePaymentInformation</td>
+<td><div><pre>java.lang.IllegalArgumentException: Illegal character in path at index 62: https://sandbox.api.visa.com/wallet-services-web/payment/info/{put your visa checkout callId here}?apikey=VCBDF5CL8GHLN275YXLX21KZXeaM3OyFf8_YEKJEvIne6ZVBo
+	at java.net.URI.create(URI.java:852)
+	at org.apache.http.client.methods.HttpPut.&lt;init&gt;(HttpPut.java:68)
+	at com.visa.vdp.utils.VisaAPIClient.createHttpRequest(VisaAPIClient.java:88)
+	at com.visa.vdp.utils.VisaAPIClient.doXPayTokenRequest(VisaAPIClient.java:135)
+	at com.visa.vdp.visacheckout.TestUpdatePaymentInformation.testUpdatePaymentInfo(TestUpdatePaymentInformation.java:51)
+Caused by: java.net.URISyntaxException: Illegal character in path at index 62: https://sandbox.api.visa.com/wallet-services-web/payment/info/{put your visa checkout callId here}?apikey=VCBDF5CL8GHLN275YXLX21KZXeaM3OyFf8_YEKJEvIne6ZVBo
+	at java.net.URI$Parser.fail(URI.java:2848)
+	at java.net.URI$Parser.checkChars(URI.java:3021)
+	at java.net.URI$Parser.parseHierarchical(URI.java:3105)
+	at java.net.URI$Parser.parse(URI.java:3053)
+	at java.net.URI.&lt;init&gt;(URI.java:588)
+	at java.net.URI.create(URI.java:850)
+	... 38 more
+... Removed 34 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1802066694", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1802066694'><pre>java.lang.IllegalArgumentException: Illegal character in path at index 62: https://sandbox.api.visa.com/wallet-services-web/payment/info/{put your visa checkout callId here}?apikey=VCBDF5CL8GHLN275YXLX21KZXeaM3OyFf8_YEKJEvIne6ZVBo
+	at java.net.URI.create(URI.java:852)
+	at org.apache.http.client.methods.HttpPut.&lt;init&gt;(HttpPut.java:68)
+	at com.visa.vdp.utils.VisaAPIClient.createHttpRequest(VisaAPIClient.java:88)
+	at com.visa.vdp.utils.VisaAPIClient.doXPayTokenRequest(VisaAPIClient.java:135)
+	at com.visa.vdp.visacheckout.TestUpdatePaymentInformation.testUpdatePaymentInfo(TestUpdatePaymentInformation.java:51)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:159)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+Caused by: java.net.URISyntaxException: Illegal character in path at index 62: https://sandbox.api.visa.com/wallet-services-web/payment/info/{put your visa checkout callId here}?apikey=VCBDF5CL8GHLN275YXLX21KZXeaM3OyFf8_YEKJEvIne6ZVBo
+	at java.net.URI$Parser.fail(URI.java:2848)
+	at java.net.URI$Parser.checkChars(URI.java:3021)
+	at java.net.URI$Parser.parseHierarchical(URI.java:3105)
+	at java.net.URI$Parser.parse(URI.java:3053)
+	at java.net.URI.&lt;init&gt;(URI.java:588)
+	at java.net.URI.create(URI.java:850)
+	... 38 more
+</pre></div></td>
+<td>0</td>
+<td>com.visa.vdp.visacheckout.TestUpdatePaymentInformation@6fadae5d</td></tr>
+<tr>
+<td title='com.visa.vdp.mlc.TestLocationUpdate.testlocations()'><b>testlocations</b><br>Test class: com.visa.vdp.mlc.TestLocationUpdate</td>
+<td><div><pre>java.lang.AssertionError: expected [200] but found [400]
+	at com.visa.vdp.mlc.TestLocationUpdate.testlocations(TestLocationUpdate.java:59)
+... Removed 40 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1391624125", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1391624125'><pre>java.lang.AssertionError: expected [200] but found [400]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
+	at org.testng.Assert.assertEquals(Assert.java:116)
+	at org.testng.Assert.assertEquals(Assert.java:389)
+	at org.testng.Assert.assertEquals(Assert.java:399)
+	at com.visa.vdp.mlc.TestLocationUpdate.testlocations(TestLocationUpdate.java:59)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:159)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+</pre></div></td>
+<td>0</td>
+<td>com.visa.vdp.mlc.TestLocationUpdate@67b64c45</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.visa.vdp.vctc.TestProgramAdministration.setUp()'><b>setUp</b><br>Test class: com.visa.vdp.vctc.TestProgramAdministration</td>
+<td></td>
+<td>0</td>
+<td>com.visa.vdp.vctc.TestProgramAdministration@4411d970</td></tr>
+<tr>
+<td title='com.visa.vdp.vctc.TestValidation.setUp()'><b>setUp</b><br>Test class: com.visa.vdp.vctc.TestValidation</td>
+<td></td>
+<td>0</td>
+<td>com.visa.vdp.vctc.TestValidation@6442b0a6</td></tr>
+<tr>
+<td title='com.visa.vdp.mlc.TestCardholderEnrollment.testCardEnrollment()'><b>testCardEnrollment</b><br>Test class: com.visa.vdp.mlc.TestCardholderEnrollment</td>
+<td></td>
+<td>1</td>
+<td>com.visa.vdp.mlc.TestCardholderEnrollment@3796751b</td></tr>
+<tr>
+<td title='com.visa.vdp.pymntacntvalidation.TestPaymentAccountValidation.testCardValidation()'><b>testCardValidation</b><br>Test class: com.visa.vdp.pymntacntvalidation.TestPaymentAccountValidation</td>
+<td></td>
+<td>0</td>
+<td>com.visa.vdp.pymntacntvalidation.TestPaymentAccountValidation@2812cbfa</td></tr>
+<tr>
+<td title='com.visa.vdp.foreignexchange.TestForeignExchangeRates.testForeignExchangeRates()'><b>testForeignExchangeRates</b><br>Test class: com.visa.vdp.foreignexchange.TestForeignExchangeRates</td>
+<td></td>
+<td>0</td>
+<td>com.visa.vdp.foreignexchange.TestForeignExchangeRates@59a6e353</td></tr>
+<tr>
+<td title='com.visa.vdp.atmlocator.TestLocateATM.testLocateATM()'><b>testLocateATM</b><br>Test class: com.visa.vdp.atmlocator.TestLocateATM</td>
+<td></td>
+<td>2</td>
+<td>com.visa.vdp.atmlocator.TestLocateATM@2d6e8792</td></tr>
+<tr>
+<td title='com.visa.vdp.visadirect.TestMVisa.testMVisaTransactions()'><b>testMVisaTransactions</b><br>Test class: com.visa.vdp.visadirect.TestMVisa</td>
+<td></td>
+<td>0</td>
+<td>com.visa.vdp.visadirect.TestMVisa@506e6d5e</td></tr>
+<tr>
+<td title='com.visa.vdp.merchantlocator.TestMerchantLocatorAPI.testMerchantLocatorAPI()'><b>testMerchantLocatorAPI</b><br>Test class: com.visa.vdp.merchantlocator.TestMerchantLocatorAPI</td>
+<td></td>
+<td>1</td>
+<td>com.visa.vdp.merchantlocator.TestMerchantLocatorAPI@7a0ac6e3</td></tr>
+<tr>
+<td title='com.visa.vdp.merchantsearch.TestMerchantSearchAPI.testMerchantSearch()'><b>testMerchantSearch</b><br>Test class: com.visa.vdp.merchantsearch.TestMerchantSearchAPI</td>
+<td></td>
+<td>5</td>
+<td>com.visa.vdp.merchantsearch.TestMerchantSearchAPI@3d24753a</td></tr>
+<tr>
+<td title='com.visa.vdp.vctc.TestValidation.testRetreiveListofDecisionRecords()'><b>testRetreiveListofDecisionRecords</b><br>Test class: com.visa.vdp.vctc.TestValidation</td>
+<td></td>
+<td>0</td>
+<td>com.visa.vdp.vctc.TestValidation@6442b0a6</td></tr>
+<tr>
+<td title='com.visa.vdp.vctc.TestProgramAdministration.testRetreiveTransactionTypeControls()'><b>testRetreiveTransactionTypeControls</b><br>Test class: com.visa.vdp.vctc.TestProgramAdministration</td>
+<td></td>
+<td>0</td>
+<td>com.visa.vdp.vctc.TestProgramAdministration@4411d970</td></tr>
+<tr>
+<td title='com.visa.vdp.visadirect.TestWatchListScreening.testWatchListInquiry()'><b>testWatchListInquiry</b><br>Test class: com.visa.vdp.visadirect.TestWatchListScreening</td>
+<td></td>
+<td>0</td>
+<td>com.visa.vdp.visadirect.TestWatchListScreening@96532d6</td></tr>
+</table><p>
+</body>
+</html>

@@ -1,0 +1,64 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 17, Failures: 5, Errors: 0, Skipped: 0, Time elapsed: 15.768 sec <<< FAILURE!
+testRegisterACard(com.visa.vdp.vctc.TestConsumerRules)  Time elapsed: 0.172 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at org.testng.Assert.assertTrue(Assert.java:52)
+	at com.visa.vdp.vctc.TestConsumerRules.testRegisterACard(TestConsumerRules.java:37)
+
+testPushFundsTransactions(com.visa.vdp.visadirect.TestFundsTransfer)  Time elapsed: 0.265 sec  <<< FAILURE!
+java.lang.AssertionError: expected [200] but found [400]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
+	at org.testng.Assert.assertEquals(Assert.java:116)
+	at org.testng.Assert.assertEquals(Assert.java:389)
+	at org.testng.Assert.assertEquals(Assert.java:399)
+	at com.visa.vdp.visadirect.TestFundsTransfer.testPushFundsTransactions(TestFundsTransfer.java:68)
+
+testGetPaymentInfo(com.visa.vdp.visacheckout.TestGetPaymentData)  Time elapsed: 0.002 sec  <<< FAILURE!
+java.lang.IllegalArgumentException: Illegal character in path at index 62: https://sandbox.api.visa.com/wallet-services-web/payment/data/{put your visa checkout callId here}?apikey=VCBDF5CL8GHLN275YXLX21KZXeaM3OyFf8_YEKJEvIne6ZVBo
+	at java.net.URI.create(URI.java:852)
+	at org.apache.http.client.methods.HttpGet.<init>(HttpGet.java:69)
+	at com.visa.vdp.utils.VisaAPIClient.createHttpRequest(VisaAPIClient.java:82)
+	at com.visa.vdp.utils.VisaAPIClient.doXPayTokenRequest(VisaAPIClient.java:135)
+	at com.visa.vdp.visacheckout.TestGetPaymentData.testGetPaymentInfo(TestGetPaymentData.java:34)
+Caused by: java.net.URISyntaxException: Illegal character in path at index 62: https://sandbox.api.visa.com/wallet-services-web/payment/data/{put your visa checkout callId here}?apikey=VCBDF5CL8GHLN275YXLX21KZXeaM3OyFf8_YEKJEvIne6ZVBo
+	at java.net.URI$Parser.fail(URI.java:2848)
+	at java.net.URI$Parser.checkChars(URI.java:3021)
+	at java.net.URI$Parser.parseHierarchical(URI.java:3105)
+	at java.net.URI$Parser.parse(URI.java:3053)
+	at java.net.URI.<init>(URI.java:588)
+	at java.net.URI.create(URI.java:850)
+	... 38 more
+
+testlocations(com.visa.vdp.mlc.TestLocationUpdate)  Time elapsed: 0.702 sec  <<< FAILURE!
+java.lang.AssertionError: expected [200] but found [400]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
+	at org.testng.Assert.assertEquals(Assert.java:116)
+	at org.testng.Assert.assertEquals(Assert.java:389)
+	at org.testng.Assert.assertEquals(Assert.java:399)
+	at com.visa.vdp.mlc.TestLocationUpdate.testlocations(TestLocationUpdate.java:59)
+
+testUpdatePaymentInfo(com.visa.vdp.visacheckout.TestUpdatePaymentInformation)  Time elapsed: 0.003 sec  <<< FAILURE!
+java.lang.IllegalArgumentException: Illegal character in path at index 62: https://sandbox.api.visa.com/wallet-services-web/payment/info/{put your visa checkout callId here}?apikey=VCBDF5CL8GHLN275YXLX21KZXeaM3OyFf8_YEKJEvIne6ZVBo
+	at java.net.URI.create(URI.java:852)
+	at org.apache.http.client.methods.HttpPut.<init>(HttpPut.java:68)
+	at com.visa.vdp.utils.VisaAPIClient.createHttpRequest(VisaAPIClient.java:88)
+	at com.visa.vdp.utils.VisaAPIClient.doXPayTokenRequest(VisaAPIClient.java:135)
+	at com.visa.vdp.visacheckout.TestUpdatePaymentInformation.testUpdatePaymentInfo(TestUpdatePaymentInformation.java:51)
+Caused by: java.net.URISyntaxException: Illegal character in path at index 62: https://sandbox.api.visa.com/wallet-services-web/payment/info/{put your visa checkout callId here}?apikey=VCBDF5CL8GHLN275YXLX21KZXeaM3OyFf8_YEKJEvIne6ZVBo
+	at java.net.URI$Parser.fail(URI.java:2848)
+	at java.net.URI$Parser.checkChars(URI.java:3021)
+	at java.net.URI$Parser.parseHierarchical(URI.java:3105)
+	at java.net.URI$Parser.parse(URI.java:3053)
+	at java.net.URI.<init>(URI.java:588)
+	at java.net.URI.create(URI.java:850)
+	... 38 more
+

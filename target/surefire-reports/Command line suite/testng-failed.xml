@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite verbose="0" name="Failed suite [Command line suite]">
+  <test name="Command line test" preserve-order="false">
+    <classes>
+      <class name="com.visa.vdp.merchantsearch.TestMerchantSearchAPI"/>
+      <class name="com.visa.vdp.foreignexchange.TestForeignExchangeRates"/>
+      <class name="com.visa.vdp.merchantlocator.TestMerchantLocatorAPI"/>
+      <class name="com.visa.vdp.vctc.TestConsumerRules"/>
+      <class name="com.visa.vdp.vctc.TestProgramAdministration"/>
+      <class name="com.visa.vdp.vctc.TestValidation"/>
+      <class name="com.visa.vdp.visacheckout.TestUpdatePaymentInformation"/>
+      <class name="com.visa.vdp.visacheckout.TestGetPaymentData"/>
+      <class name="com.visa.vdp.atmlocator.TestLocateATM"/>
+      <class name="com.visa.vdp.pymntacntvalidation.TestPaymentAccountValidation"/>
+      <class name="com.visa.vdp.visadirect.TestFundsTransfer"/>
+      <class name="com.visa.vdp.visadirect.TestMVisa"/>
+      <class name="com.visa.vdp.visadirect.TestWatchListScreening"/>
+      <class name="com.visa.vdp.mlc.TestCardholderEnrollment"/>
+      <class name="com.visa.vdp.mlc.TestLocationUpdate"/>
+    </classes>
+  </test> <!-- Command line test -->
+  <test name="Command line test(failed)">
+    <classes>
+      <class name="com.visa.vdp.visadirect.TestWatchListScreening">
+        <methods>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.visa.vdp.visadirect.TestWatchListScreening -->
+      <class name="com.visa.vdp.merchantsearch.TestMerchantSearchAPI">
+        <methods>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.visa.vdp.merchantsearch.TestMerchantSearchAPI -->
+      <class name="com.visa.vdp.visadirect.TestMVisa">
+        <methods>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.visa.vdp.visadirect.TestMVisa -->
+      <class name="com.visa.vdp.visacheckout.TestGetPaymentData">
+        <methods>
+          <include name="setup"/>
+          <include name="testGetPaymentInfo"/>
+        </methods>
+      </class> <!-- com.visa.vdp.visacheckout.TestGetPaymentData -->
+      <class name="com.visa.vdp.mlc.TestLocationUpdate">
+        <methods>
+          <include name="setup"/>
+          <include name="testlocations"/>
+        </methods>
+      </class> <!-- com.visa.vdp.mlc.TestLocationUpdate -->
+      <class name="com.visa.vdp.atmlocator.TestLocateATM">
+        <methods>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.visa.vdp.atmlocator.TestLocateATM -->
+      <class name="com.visa.vdp.mlc.TestCardholderEnrollment">
+        <methods>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.visa.vdp.mlc.TestCardholderEnrollment -->
+      <class name="com.visa.vdp.foreignexchange.TestForeignExchangeRates">
+        <methods>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.visa.vdp.foreignexchange.TestForeignExchangeRates -->
+      <class name="com.visa.vdp.merchantlocator.TestMerchantLocatorAPI">
+        <methods>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.visa.vdp.merchantlocator.TestMerchantLocatorAPI -->
+      <class name="com.visa.vdp.pymntacntvalidation.TestPaymentAccountValidation">
+        <methods>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.visa.vdp.pymntacntvalidation.TestPaymentAccountValidation -->
+      <class name="com.visa.vdp.visadirect.TestFundsTransfer">
+        <methods>
+          <include name="testPushFundsTransactions"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.visa.vdp.visadirect.TestFundsTransfer -->
+      <class name="com.visa.vdp.vctc.TestConsumerRules">
+        <methods>
+          <include name="testRegisterACard"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.visa.vdp.vctc.TestConsumerRules -->
+      <class name="com.visa.vdp.visacheckout.TestUpdatePaymentInformation">
+        <methods>
+          <include name="setup"/>
+          <include name="testUpdatePaymentInfo"/>
+        </methods>
+      </class> <!-- com.visa.vdp.visacheckout.TestUpdatePaymentInformation -->
+    </classes>
+  </test> <!-- Command line test(failed) -->
+</suite> <!-- Failed suite [Command line suite] -->

@@ -1,0 +1,15 @@
+com/visa/vdp/visadirect/TestWatchListScreening.class
+com/visa/vdp/vctc/TestValidation.class
+com/visa/vdp/vctc/TestProgramAdministration.class
+com/visa/vdp/merchantsearch/TestMerchantSearchAPI.class
+com/visa/vdp/vctc/TestConsumerRules.class
+com/visa/vdp/visacheckout/TestGetPaymentData.class
+com/visa/vdp/pymntacntvalidation/TestPaymentAccountValidation.class
+com/visa/vdp/merchantlocator/TestMerchantLocatorAPI.class
+com/visa/vdp/foreignexchange/TestForeignExchangeRates.class
+com/visa/vdp/visacheckout/TestUpdatePaymentInformation.class
+com/visa/vdp/visadirect/TestFundsTransfer.class
+com/visa/vdp/visadirect/TestMVisa.class
+com/visa/vdp/atmlocator/TestLocateATM.class
+com/visa/vdp/mlc/TestCardholderEnrollment.class
+com/visa/vdp/mlc/TestLocationUpdate.class

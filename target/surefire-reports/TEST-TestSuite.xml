@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite tests="17" failures="5" name="TestSuite" time="15.067" errors="0" skipped="0">
+  <properties>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/jre/lib"/>
+    <property name="java.vm.version" value="25.131-b11"/>
+    <property name="user.country.format" value="GB"/>
+    <property name="gopherProxySet" value="false"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="maven.multiModuleProjectDirectory" value="/Users/sami/Desktop/samplecode-JAVA-3d5e88/vdp-java"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=":"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="/Users/sami/Desktop/samplecode-JAVA-3d5e88/vdp-java"/>
+    <property name="java.runtime.version" value="1.8.0_131-b11"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.CGraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/jre/lib/endorsed"/>
+    <property name="os.arch" value="x86_64"/>
+    <property name="java.io.tmpdir" value="/var/folders/hz/51s7qwy54ys88gq5kb6m9ynm0000gp/T/"/>
+    <property name="line.separator" value="
+"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="classworlds.conf" value="/usr/local/Cellar/maven/3.5.3/libexec/bin/m2.conf"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/Users/sami/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="maven.conf" value="/usr/local/Cellar/maven/3.5.3/libexec/conf"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="10.13.4"/>
+    <property name="library.jansi.path" value="/usr/local/Cellar/maven/3.5.3/libexec/lib/jansi-native"/>
+    <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="user.home" value="/Users/sami"/>
+    <property name="user.timezone" value="Europe/London"/>
+    <property name="java.awt.printerjob" value="sun.lwawt.macosx.CPrinterJob"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="user.name" value="sami"/>
+    <property name="java.class.path" value="/usr/local/Cellar/maven/3.5.3/libexec/boot/plexus-classworlds-2.5.2.jar"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/jre"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher test"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="en"/>
+    <property name="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.8.0_131"/>
+    <property name="java.ext.dirs" value="/Users/sami/Library/Java/Extensions:/Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/jre/lib/ext:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java"/>
+    <property name="sun.boot.class.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/jre/classes"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="/usr/local/Cellar/maven/3.5.3/libexec"/>
+    <property name="file.separator" value="/"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="sun.cpu.isalist" value=""/>
+  </properties>
+  <testcase classname="com.visa.vdp.mlc.TestCardholderEnrollment" name="testCardEnrollment" time="1.577"/>
+  <testcase classname="com.visa.vdp.vctc.TestConsumerRules" name="testRegisterACard" time="0.172">
+    <failure message="expected [true] but found [false]" type="java.lang.AssertionError">java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at org.testng.Assert.assertTrue(Assert.java:52)
+	at com.visa.vdp.vctc.TestConsumerRules.testRegisterACard(TestConsumerRules.java:37)
+</failure>
+    <system-out>2018-06-02 23:48:19 INFO  VisaAPIClient:198 - URI: https://sandbox.api.visa.com/vctc/customerrules/v1/consumertransactioncontrols
+2018-06-02 23:48:19 INFO  VisaAPIClient:199 - Register A Card
+2018-06-02 23:48:19 INFO  VisaAPIClient:203 - RequestBody: {
+  &quot;primaryAccountNumber&quot; : &quot;{put your pan number from test data under consumer rules api -&gt; register a card here}&quot;
+}
+2018-06-02 23:48:20 INFO  VisaAPIClient:171 - Response status : HTTP/1.1 400 Bad Request
+
+2018-06-02 23:48:20 INFO  VisaAPIClient:173 - Response Headers: 
+
+2018-06-02 23:48:20 INFO  VisaAPIClient:176 - Server:Apache
+2018-06-02 23:48:20 INFO  VisaAPIClient:176 - X-SERVED-BY:l73c002
+2018-06-02 23:48:20 INFO  VisaAPIClient:176 - X-CORRELATION-ID:1527979699_980_93_l73c002_VDP_ARM
+2018-06-02 23:48:20 INFO  VisaAPIClient:176 - X-Frame-Options:SAMEORIGIN
+2018-06-02 23:48:20 INFO  VisaAPIClient:176 - X-XSS-Protection:1; mode=block
+2018-06-02 23:48:20 INFO  VisaAPIClient:176 - X-Content-Type-Options:nosniff
+2018-06-02 23:48:20 INFO  VisaAPIClient:176 - Strict-Transport-Security:max-age=2592000;includeSubdomains
+2018-06-02 23:48:20 INFO  VisaAPIClient:176 - Cache-Control:no-cache, no-store, must-revalidate
+2018-06-02 23:48:20 INFO  VisaAPIClient:176 - Pragma:no-cache
+2018-06-02 23:48:20 INFO  VisaAPIClient:176 - Expires:-1
+2018-06-02 23:48:20 INFO  VisaAPIClient:176 - X-APP-STATUS:400
+2018-06-02 23:48:20 INFO  VisaAPIClient:176 - Content-Type:application/json;charset=UTF-8
+2018-06-02 23:48:20 INFO  VisaAPIClient:176 - Content-Length:141
+2018-06-02 23:48:20 INFO  VisaAPIClient:176 - X-Cnection:close
+2018-06-02 23:48:20 INFO  VisaAPIClient:176 - X-Cnection:close
+2018-06-02 23:48:20 INFO  VisaAPIClient:176 - Date:Sat, 02 Jun 2018 22:48:20 GMT
+2018-06-02 23:48:20 INFO  VisaAPIClient:176 - Connection:close
+2018-06-02 23:48:20 INFO  VisaAPIClient:177 - 
+ Response Body:
+2018-06-02 23:48:20 INFO  VisaAPIClient:184 - ResponseBody: {
+  &quot;responseStatus&quot; : {
+    &quot;code&quot; : &quot;9501&quot;,
+    &quot;severity&quot; : &quot;ERROR&quot;,
+    &quot;message&quot; : &quot;Invalid input found, please correct the input data&quot;,
+    &quot;info&quot; : &quot;&quot;,
+    &quot;status&quot; : &quot;400&quot;
+  }
+}
+</system-out>
+  </testcase>
+  <testcase classname="com.visa.vdp.foreignexchange.TestForeignExchangeRates" name="testForeignExchangeRates" time="0.73"/>
+  <testcase classname="com.visa.vdp.visadirect.TestFundsTransfer" name="testPushFundsTransactions" time="0.265">
+    <failure message="expected [200] but found [400]" type="java.lang.AssertionError">java.lang.AssertionError: expected [200] but found [400]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
+	at org.testng.Assert.assertEquals(Assert.java:116)
+	at org.testng.Assert.assertEquals(Assert.java:389)
+	at org.testng.Assert.assertEquals(Assert.java:399)
+	at com.visa.vdp.visadirect.TestFundsTransfer.testPushFundsTransactions(TestFundsTransfer.java:68)
+</failure>
+    <system-out>2018-06-02 23:48:20 INFO  VisaAPIClient:198 - URI: https://sandbox.api.visa.com/visadirect/fundstransfer/v1/pushfundstransactions/
+2018-06-02 23:48:20 INFO  VisaAPIClient:199 - Push Funds Transaction Test
+2018-06-02 23:48:20 INFO  VisaAPIClient:203 - RequestBody: {
+  &quot;systemsTraceAuditNumber&quot; : 350420,
+  &quot;retrievalReferenceNumber&quot; : &quot;401010350420&quot;,
+  &quot;localTransactionDateTime&quot; : &quot;2018-06-02T23:48:18&quot;,
+  &quot;acquiringBin&quot; : 409999,
+  &quot;acquirerCountryCode&quot; : &quot;101&quot;,
+  &quot;senderAccountNumber&quot; : &quot;1234567890123456&quot;,
+  &quot;senderCountryCode&quot; : &quot;USA&quot;,
+  &quot;transactionCurrencyCode&quot; : &quot;USD&quot;,
+  &quot;senderName&quot; : &quot;John Smith&quot;,
+  &quot;senderAddress&quot; : &quot;44 Market St.&quot;,
+  &quot;senderCity&quot; : &quot;San Francisco&quot;,
+  &quot;senderStateCode&quot; : &quot;CA&quot;,
+  &quot;recipientName&quot; : &quot;Adam Smith&quot;,
+  &quot;recipientPrimaryAccountNumber&quot; : &quot;4957030420210454&quot;,
+  &quot;amount&quot; : &quot;112.00&quot;,
+  &quot;businessApplicationId&quot; : &quot;AA&quot;,
+  &quot;transactionIdentifier&quot; : 234234322342343,
+  &quot;merchantCategoryCode&quot; : 6012,
+  &quot;sourceOfFundsCode&quot; : &quot;03&quot;,
+  &quot;cardAcceptor&quot; : {
+    &quot;name&quot; : &quot;John Smith&quot;,
+    &quot;terminalId&quot; : &quot;13655392&quot;,
+    &quot;idCode&quot; : &quot;VMT200911026070&quot;,
+    &quot;address&quot; : {
+      &quot;state&quot; : &quot;CA&quot;,
+      &quot;county&quot; : &quot;081&quot;,
+      &quot;country&quot; : &quot;USA&quot;,
+      &quot;zipCode&quot; : &quot;94105&quot;
+    }
+  },
+  &quot;feeProgramIndicator&quot; : &quot;123&quot;
+}
+2018-06-02 23:48:21 INFO  VisaAPIClient:171 - Response status : HTTP/1.1 400 Bad Request
+
+2018-06-02 23:48:21 INFO  VisaAPIClient:173 - Response Headers: 
+
+2018-06-02 23:48:21 INFO  VisaAPIClient:176 - Server:Apache
+2018-06-02 23:48:21 INFO  VisaAPIClient:176 - X-SERVED-BY:l73c036
+2018-06-02 23:48:21 INFO  VisaAPIClient:176 - X-CORRELATION-ID:1527979700_913_78_l73c036_VDP_ARM
+2018-06-02 23:48:21 INFO  VisaAPIClient:176 - X-Backside-Transport:FAIL FAIL,FAIL FAIL
+2018-06-02 23:48:21 INFO  VisaAPIClient:176 - X-APP-STATUS:400
+2018-06-02 23:48:21 INFO  VisaAPIClient:176 - X-Application-Error-Code:3001
+2018-06-02 23:48:21 INFO  VisaAPIClient:176 - X-Global-Transaction-ID:10381451
+2018-06-02 23:48:21 INFO  VisaAPIClient:176 - X-Frame-Options:SAMEORIGIN
+2018-06-02 23:48:21 INFO  VisaAPIClient:176 - X-XSS-Protection:1; mode=block
+2018-06-02 23:48:21 INFO  VisaAPIClient:176 - X-Content-Type-Options:nosniff
+2018-06-02 23:48:21 INFO  VisaAPIClient:176 - Strict-Transport-Security:max-age=2592000;includeSubdomains
+2018-06-02 23:48:21 INFO  VisaAPIClient:176 - Cache-Control:no-cache, no-store, must-revalidate
+2018-06-02 23:48:21 INFO  VisaAPIClient:176 - Pragma:no-cache
+2018-06-02 23:48:21 INFO  VisaAPIClient:176 - Expires:-1
+2018-06-02 23:48:21 INFO  VisaAPIClient:176 - Content-Type:application/json;charset=UTF-8
+2018-06-02 23:48:21 INFO  VisaAPIClient:176 - Content-Language:en-US
+2018-06-02 23:48:21 INFO  VisaAPIClient:176 - Content-Length:131
+2018-06-02 23:48:21 INFO  VisaAPIClient:176 - X-Cnection:close
+2018-06-02 23:48:21 INFO  VisaAPIClient:176 - X-Cnection:close
+2018-06-02 23:48:21 INFO  VisaAPIClient:176 - Date:Sat, 02 Jun 2018 22:48:21 GMT
+2018-06-02 23:48:21 INFO  VisaAPIClient:176 - Connection:close
+2018-06-02 23:48:21 INFO  VisaAPIClient:177 - 
+ Response Body:
+2018-06-02 23:48:21 INFO  VisaAPIClient:184 - ResponseBody: {
+  &quot;errorMessage&quot; : &quot;API Validation Error: 3001. Transaction to Recipient Card Country is restricted by the Sender Institution &quot;
+}
+</system-out>
+  </testcase>
+  <testcase classname="com.visa.vdp.visacheckout.TestGetPaymentData" name="testGetPaymentInfo" time="0.002">
+    <failure message="Illegal character in path at index 62: https://sandbox.api.visa.com/wallet-services-web/payment/data/{put your visa checkout callId here}?apikey=VCBDF5CL8GHLN275YXLX21KZXeaM3OyFf8_YEKJEvIne6ZVBo" type="java.lang.IllegalArgumentException">java.lang.IllegalArgumentException: Illegal character in path at index 62: https://sandbox.api.visa.com/wallet-services-web/payment/data/{put your visa checkout callId here}?apikey=VCBDF5CL8GHLN275YXLX21KZXeaM3OyFf8_YEKJEvIne6ZVBo
+	at java.net.URI.create(URI.java:852)
+	at org.apache.http.client.methods.HttpGet.&lt;init&gt;(HttpGet.java:69)
+	at com.visa.vdp.utils.VisaAPIClient.createHttpRequest(VisaAPIClient.java:82)
+	at com.visa.vdp.utils.VisaAPIClient.doXPayTokenRequest(VisaAPIClient.java:135)
+	at com.visa.vdp.visacheckout.TestGetPaymentData.testGetPaymentInfo(TestGetPaymentData.java:34)
+Caused by: java.net.URISyntaxException: Illegal character in path at index 62: https://sandbox.api.visa.com/wallet-services-web/payment/data/{put your visa checkout callId here}?apikey=VCBDF5CL8GHLN275YXLX21KZXeaM3OyFf8_YEKJEvIne6ZVBo
+	at java.net.URI$Parser.fail(URI.java:2848)
+	at java.net.URI$Parser.checkChars(URI.java:3021)
+	at java.net.URI$Parser.parseHierarchical(URI.java:3105)
+	at java.net.URI$Parser.parse(URI.java:3053)
+	at java.net.URI.&lt;init&gt;(URI.java:588)
+	at java.net.URI.create(URI.java:850)
+	... 38 more
+</failure>
+    <system-out>2018-06-02 23:48:21 INFO  VisaAPIClient:198 - URI: https://sandbox.api.visa.com/wallet-services-web/payment/data/{put your visa checkout callId here}?apikey=VCBDF5CL8GHLN275YXLX21KZXeaM3OyFf8_YEKJEvIne6ZVBo
+2018-06-02 23:48:21 INFO  VisaAPIClient:199 - Get Payment Information Test
+</system-out>
+  </testcase>
+  <testcase classname="com.visa.vdp.atmlocator.TestLocateATM" name="testLocateATM" time="2.414"/>
+  <testcase classname="com.visa.vdp.mlc.TestLocationUpdate" name="testlocations" time="0.702">
+    <failure message="expected [200] but found [400]" type="java.lang.AssertionError">java.lang.AssertionError: expected [200] but found [400]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
+	at org.testng.Assert.assertEquals(Assert.java:116)
+	at org.testng.Assert.assertEquals(Assert.java:389)
+	at org.testng.Assert.assertEquals(Assert.java:399)
+	at com.visa.vdp.mlc.TestLocationUpdate.testlocations(TestLocationUpdate.java:59)
+</failure>
+    <system-out>2018-06-02 23:48:23 INFO  VisaAPIClient:198 - URI: https://sandbox.api.visa.com/mlc/locationupdate/v1/locations
+2018-06-02 23:48:23 INFO  VisaAPIClient:199 - Locations Update Test
+2018-06-02 23:48:23 INFO  VisaAPIClient:203 - RequestBody: {
+  &quot;accuracy&quot; : &quot;5000&quot;,
+  &quot;cloudNotificationKey&quot; : &quot;03e3ae03-a627-4241-bad6-58f811c18e46&quot;,
+  &quot;cloudNotificationProvider&quot; : &quot;1&quot;,
+  &quot;deviceId&quot; : &quot;{put your enrollments api device id here}&quot;,
+  &quot;deviceLocationDateTime&quot; : &quot;2018-06-02T22:48:18.291Z&quot;,
+  &quot;geoLocationCoordinate&quot; : {
+    &quot;latitude&quot; : &quot;37.558546&quot;,
+    &quot;longitude&quot; : &quot;-122.271079&quot;
+  },
+  &quot;header&quot; : {
+    &quot;messageDateTime&quot; : &quot;2018-06-02T22:48:18.291Z&quot;,
+    &quot;messageId&quot; : &quot;{put your locations api message id here}&quot;
+  },
+  &quot;issuerId&quot; : &quot;{put your enrollments api issuer id here}&quot;,
+  &quot;provider&quot; : &quot;1&quot;,
+  &quot;source&quot; : &quot;2&quot;
+}
+2018-06-02 23:48:24 INFO  VisaAPIClient:171 - Response status : HTTP/1.1 400 Bad Request
+
+2018-06-02 23:48:24 INFO  VisaAPIClient:173 - Response Headers: 
+
+2018-06-02 23:48:24 INFO  VisaAPIClient:176 - Server:Apache
+2018-06-02 23:48:24 INFO  VisaAPIClient:176 - X-SERVED-BY:l73c033
+2018-06-02 23:48:24 INFO  VisaAPIClient:176 - X-CORRELATION-ID:1527979703_559_90_l73c033_VDP_ARM
+2018-06-02 23:48:24 INFO  VisaAPIClient:176 - X-Backside-Transport:FAIL FAIL,FAIL FAIL
+2018-06-02 23:48:24 INFO  VisaAPIClient:176 - X-Global-Transaction-ID:1978494151
+2018-06-02 23:48:24 INFO  VisaAPIClient:176 - X-APP-STATUS:400
+2018-06-02 23:48:24 INFO  VisaAPIClient:176 - X-Frame-Options:SAMEORIGIN
+2018-06-02 23:48:24 INFO  VisaAPIClient:176 - X-XSS-Protection:1; mode=block
+2018-06-02 23:48:24 INFO  VisaAPIClient:176 - X-Content-Type-Options:nosniff
+2018-06-02 23:48:24 INFO  VisaAPIClient:176 - Strict-Transport-Security:max-age=2592000;includeSubdomains
+2018-06-02 23:48:24 INFO  VisaAPIClient:176 - Cache-Control:no-cache, no-store, must-revalidate
+2018-06-02 23:48:24 INFO  VisaAPIClient:176 - Pragma:no-cache
+2018-06-02 23:48:24 INFO  VisaAPIClient:176 - Expires:-1
+2018-06-02 23:48:24 INFO  VisaAPIClient:176 - Content-Type:application/json;charset=UTF-8
+2018-06-02 23:48:24 INFO  VisaAPIClient:176 - Content-Language:en-US
+2018-06-02 23:48:24 INFO  VisaAPIClient:176 - Content-Length:177
+2018-06-02 23:48:24 INFO  VisaAPIClient:176 - X-Cnection:close
+2018-06-02 23:48:24 INFO  VisaAPIClient:176 - X-Cnection:close
+2018-06-02 23:48:24 INFO  VisaAPIClient:176 - Date:Sat, 02 Jun 2018 22:48:23 GMT
+2018-06-02 23:48:24 INFO  VisaAPIClient:176 - Connection:close
+2018-06-02 23:48:24 INFO  VisaAPIClient:177 - 
+ Response Body:
+2018-06-02 23:48:24 INFO  VisaAPIClient:184 - ResponseBody: {
+  &quot;status&quot; : &quot;failed&quot;,
+  &quot;errorMessages&quot; : [ {
+    &quot;errorCode&quot; : &quot;104&quot;,
+    &quot;errorMessage&quot; : &quot;Message deserialization failed&quot;
+  } ],
+  &quot;header&quot; : {
+    &quot;messageId&quot; : &quot;0&quot;,
+    &quot;messageDateTime&quot; : &quot;2018-06-02T22:48:23.806Z&quot;
+  }
+}
+</system-out>
+  </testcase>
+  <testcase classname="com.visa.vdp.visadirect.TestMVisa" name="testMVisaTransactions" time="0.608"/>
+  <testcase classname="com.visa.vdp.merchantlocator.TestMerchantLocatorAPI" name="testMerchantLocatorAPI" time="1.229"/>
+  <testcase classname="com.visa.vdp.merchantsearch.TestMerchantSearchAPI" name="testMerchantSearch" time="5.835"/>
+  <testcase classname="com.visa.vdp.pymntacntvalidation.TestPaymentAccountValidation" name="testCardValidation" time="0.29"/>
+  <testcase classname="com.visa.vdp.vctc.TestProgramAdministration" name="setUp" time="0.001"/>
+  <testcase classname="com.visa.vdp.vctc.TestProgramAdministration" name="testRetreiveTransactionTypeControls" time="0.226"/>
+  <testcase classname="com.visa.vdp.visacheckout.TestUpdatePaymentInformation" name="testUpdatePaymentInfo" time="0.003">
+    <failure message="Illegal character in path at index 62: https://sandbox.api.visa.com/wallet-services-web/payment/info/{put your visa checkout callId here}?apikey=VCBDF5CL8GHLN275YXLX21KZXeaM3OyFf8_YEKJEvIne6ZVBo" type="java.lang.IllegalArgumentException">java.lang.IllegalArgumentException: Illegal character in path at index 62: https://sandbox.api.visa.com/wallet-services-web/payment/info/{put your visa checkout callId here}?apikey=VCBDF5CL8GHLN275YXLX21KZXeaM3OyFf8_YEKJEvIne6ZVBo
+	at java.net.URI.create(URI.java:852)
+	at org.apache.http.client.methods.HttpPut.&lt;init&gt;(HttpPut.java:68)
+	at com.visa.vdp.utils.VisaAPIClient.createHttpRequest(VisaAPIClient.java:88)
+	at com.visa.vdp.utils.VisaAPIClient.doXPayTokenRequest(VisaAPIClient.java:135)
+	at com.visa.vdp.visacheckout.TestUpdatePaymentInformation.testUpdatePaymentInfo(TestUpdatePaymentInformation.java:51)
+Caused by: java.net.URISyntaxException: Illegal character in path at index 62: https://sandbox.api.visa.com/wallet-services-web/payment/info/{put your visa checkout callId here}?apikey=VCBDF5CL8GHLN275YXLX21KZXeaM3OyFf8_YEKJEvIne6ZVBo
+	at java.net.URI$Parser.fail(URI.java:2848)
+	at java.net.URI$Parser.checkChars(URI.java:3021)
+	at java.net.URI$Parser.parseHierarchical(URI.java:3105)
+	at java.net.URI$Parser.parse(URI.java:3053)
+	at java.net.URI.&lt;init&gt;(URI.java:588)
+	at java.net.URI.create(URI.java:850)
+	... 38 more
+</failure>
+    <system-out>2018-06-02 23:48:32 INFO  VisaAPIClient:198 - URI: https://sandbox.api.visa.com/wallet-services-web/payment/info/{put your visa checkout callId here}?apikey=VCBDF5CL8GHLN275YXLX21KZXeaM3OyFf8_YEKJEvIne6ZVBo
+2018-06-02 23:48:32 INFO  VisaAPIClient:199 - Update Payment Information Test
+2018-06-02 23:48:32 INFO  VisaAPIClient:203 - RequestBody: {
+  &quot;orderInfo&quot; : {
+    &quot;currencyCode&quot; : &quot;USD&quot;,
+    &quot;discount&quot; : &quot;5.25&quot;,
+    &quot;eventType&quot; : &quot;Confirm&quot;,
+    &quot;giftWrap&quot; : &quot;10.1&quot;,
+    &quot;misc&quot; : &quot;3.2&quot;,
+    &quot;orderId&quot; : &quot;testorderID&quot;,
+    &quot;promoCode&quot; : &quot;testPromoCode&quot;,
+    &quot;reason&quot; : &quot;Order Successfully Created&quot;,
+    &quot;shippingHandling&quot; : &quot;5.1&quot;,
+    &quot;subtotal&quot; : &quot;80.1&quot;,
+    &quot;tax&quot; : &quot;7.1&quot;,
+    &quot;total&quot; : &quot;101&quot;
+  }
+}
+</system-out>
+  </testcase>
+  <testcase classname="com.visa.vdp.vctc.TestValidation" name="setUp" time="0"/>
+  <testcase classname="com.visa.vdp.vctc.TestValidation" name="testRetreiveListofDecisionRecords" time="0.707"/>
+  <testcase classname="com.visa.vdp.visadirect.TestWatchListScreening" name="testWatchListInquiry" time="0.306"/>
+</testsuite>
